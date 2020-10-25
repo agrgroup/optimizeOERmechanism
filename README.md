@@ -6,7 +6,7 @@ Govind Rajan, A.; Carter, E. A. Discovering Competing Electrocatalytic Mechanism
 
 The code is written by: Ananth Govind Rajan and Garrett R. Dowdy
 
-The file is to be executed as: python optimizeOERmechanism.py <name-of-species-library-file> <number-of-reactions-to-consider>, e.g.,
+The file is to be executed as: python optimizeOERmechanism.py (name-of-species-library-file) (number-of-reactions-to-consider), e.g.,
 
 python optimizeOERmechanism.py OER_NiOOH_0001_Oxo_HSE.txt 6
 
