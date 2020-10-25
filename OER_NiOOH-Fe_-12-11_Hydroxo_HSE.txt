@@ -1,0 +1,27 @@
+# Construct a dictionary of the species, indexed by their names
+Species = {
+    '*OH + gOH'   :   Species(Name ='*OH + gOH',    n_H = 2, n_O = 2, G =   0.0000, c = 0 ),
+    '*(OH)2 + gOH':   Species(Name ='*(OH)2 + gOH', n_H = 3, n_O = 3, G = -10.9798, c = 0 ),
+    '*OOH + gOH'  :   Species(Name ='*OOH + gOH',   n_H = 2, n_O = 3, G =  -5.1824, c = 0 ),
+    '*  + gOH'    :   Species(Name ='* + gOH',      n_H = 1, n_O = 1, G =  11.7300, c = 0 ),
+    'O*OH + gOH'  :   Species(Name ='O*OH + gOH',   n_H = 2, n_O = 3, G =  -5.6424, c = 0 ),
+    'O*O + gOH'   :   Species(Name ='O*O + gOH',    n_H = 1, n_O = 3, G =   0.0050, c = 0 ),
+    '*O + gOH'    :   Species(Name ='*O + gOH',     n_H = 1, n_O = 2, G =   5.0974, c = 0 ),
+    '* + gOH2'    :   Species(Name ='* + gOH2',     n_H = 2, n_O = 1, G =   6.4126, c = 0 ),
+    '*OH2 + gOH'  :   Species(Name ='*OH2 + gOH',   n_H = 3, n_O = 2, G =  -4.7272, c = 0 ),
+    '(H++e-)'     :   Species(Name ='(H++e-)',      n_H = 1, n_O = 0, G =  -3.7274, c = 4 ),
+    'H2O'         :   Species(Name ='H2O',          n_H = 2, n_O = 1, G = -16.1872, c = -2),
+    'O2'          :   Species(Name ='O2',           n_H = 0, n_O = 2, G = -12.5450, c = 1 ),
+    '*O(OH)H + gOH':  Species(Name ='*O(OH)H + gOH',n_H = 3, n_O = 3, G =  -9.6298, c = 0 ),
+    'HO*O(OH)H + gOH':Species(Name ='HO*O(OH)H + gOH',n_H = 4,n_O =4, G = -21.3196, c = 0 )
+}
+
+# Specify the maximum Gibbs free energy change for a non-electroactive step (in eV)
+MaxGibbsNonElectroactive = 0.5
+
+# Specify the initial state of the catalyst
+InitialStateSurface = '*OH + gOH'
+
+# Specify the Gibbs free energy change per electron for the complete electrochemical process
+DelGTot = 1.23
+

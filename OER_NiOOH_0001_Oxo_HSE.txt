@@ -1,0 +1,22 @@
+# Construct a dictionary of the species, indexed by their names with G values in eV
+Species = {
+    '*O(OH)H'   :   Species(Name ='*O(OH)H', n_H = 2, n_O = 2, G = -21.2161       , c = 0 ),
+    '*OH2'      :   Species(Name ='*OH2',    n_H = 2, n_O = 1, G = -16.0440       , c = 0 ),
+    '*OH'       :   Species(Name ='*OH',     n_H = 1, n_O = 1, G = -12.1843       , c = 0 ),
+    '*OOH'      :   Species(Name ='*OOH',    n_H = 1, n_O = 2, G = -17.6319       , c = 0 ),
+    '*O'        :   Species(Name ='*O',      n_H = 0, n_O = 1, G =  -7.3902       , c = 0 ),
+    '*O2'       :   Species(Name ='*O2',     n_H = 0, n_O = 2, G = -12.7599       , c = 0 ),
+    '*'         :   Species(Name ='*',       n_H = 0, n_O = 0, G =   0.0          ,  c = 0),
+    '(H++e-)'     :   Species(Name ='(H++e-)',      n_H = 1, n_O = 0, G =  -3.7274, c = 4 ),
+    'H2O'         :   Species(Name ='H2O',          n_H = 2, n_O = 1, G = -16.1883, c = -2),
+    'O2'          :   Species(Name ='O2',           n_H = 0, n_O = 2, G = -12.5469, c = 1 ),
+}
+
+# Specify the maximum Gibbs free energy change for a non-electroactive step (in eV)
+MaxGibbsNonElectroactive = 0.50
+
+# Specify the initial state of the catalyst
+InitialStateSurface = '*O'
+
+# Specify the Gibbs free energy change per electron for the complete electrochemical process
+DelGTot = 1.23
