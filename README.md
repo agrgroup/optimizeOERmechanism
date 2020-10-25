@@ -9,3 +9,12 @@ The code is written by: Ananth Govind Rajan and Garrett R. Dowdy
 The file is to be executed as: python optimizeOERmechanism.py <name-of-species-library-file> <number-of-reactions-to-consider>, e.g.,
 
 python optimizeOERmechanism.py OER_NiOOH_0001_Oxo_HSE.txt 6
+
+There are 4 different species library files already available, these are:
+OER_NiOOH_0001_Oxo_PBE.txt
+OER_NiOOH-Fe_-12-11_Hydroxo_HSE.txt
+OER_NiOOH_0001_MultiOxo_PBE.txt
+OER_NiOOH_0001_Oxo_HSE.txt
+
+The crystallographic facet, active site, and level of DFT theory are indicated in each filename.
+
